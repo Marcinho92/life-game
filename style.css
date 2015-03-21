@@ -1,0 +1,31 @@
+body {
+	color: white;
+}
+
+header {
+	background: red
+}
+
+section#leftSection {
+	width: 60%;
+	float: left;
+	background-image: url("juventus.jpg");
+}
+
+section#rightSection {
+	width: 40%;
+	float: left;
+	/*background: yellow;*/
+}
+
+canvas {
+	/*background: purple;*/
+	border: 1px solid black;
+}
+
+footer {
+	background-color:black;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html>
+
+<head> 
+	<meta charset="UTF-8"> 
+	<title>Life game</title> 
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+
+	<script type="text/javascript">
+		
+
+		function draw() {
+			var canvas = document.getElementById('tutorial');
+			if(canvas.getContext) {
+				var ctx = canvas.getContext('2d');	
+
+				for (var i = 0; i < 6; i++){
+    				for (var j = 0; j < 6; j++){
+    					if((i % 2 == 0 && j % 2 == 0) || (i % 2 == 1 && j % 2 == 1)) {
+    						ctx.fillStyle = 'rgb(0, 255, 0)';
+    					} else {
+    						ctx.fillStyle = 'rgb(255, 0, 0)';
+    					}
+      					//ctx.fillStyle = 'rgb(' + Math.floor(255-42.5*i) + ',' +
+                       	//Math.floor(255-42.5*j) + ',0)';
+      					ctx.fillRect(j*25,i*25,25,25);
+    				}
+  				}
+			}
+		}
+	</script>
+
+
+</head> 
+
+ <body onload="draw();">
+
+ 	<header>
+ 		<h1>Glowny tytul strony</h1>
+	</header>
+
+ 	<section id="leftSection">
+ 		<canvas id="tutorial" width="500" height="550">
+ 			
+ 		</canvas>
+ 	</section>
+
+ 	<section id="rightSection">
+ 		
+ 	</section>
+
+
+ 	<footer>
+		 Copyright © Marcin Obyrtacz
+	</footer>
+
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
